@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 const Nav = ({route}) => {
     return (
         <>
-            <li className=''>
+            <ul className=' mr-7'>
                 <a href={route.path}> {route.label} </a>
-            </li>
+            </ul>
         </>
     );
 };
