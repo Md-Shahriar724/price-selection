@@ -13,7 +13,7 @@ const Navitems = () => {
       ];
       
     return (
-        <nav  className="bg-green-200">
+        <nav  className="bg-green-200 sticky top-0 ">
         <div className="md:hidden text-2xl py-4 px-3" onClick={()=>{setOpen(!open)}}>
             {
                 open === true  ? <AiOutlineClose className="" /> : <AiOutlineMenu></AiOutlineMenu>

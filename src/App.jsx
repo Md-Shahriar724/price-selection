@@ -1,16 +1,16 @@
 import './App.css'
 import DaisyNav from './Components/DaisyNav/DaisyNav'
 import Navitems from './Components/Navbar/Navitems'
-import Price from './Components/Priceing/Price'
+import Priceings from './Components/Priceing/Priceings'
 
 function App() {
 
 
   return (
     <>
-      <Navitems></Navitems>
+      <Navitems ></Navitems>
     {/* <DaisyNav></DaisyNav> */}
-    <Price></Price>
+    <Priceings></Priceings>
     
     </>
   )

@@ -1,5 +1,6 @@
-const Price = () => {
-  [
+import Priceing from "./Priceing";
+const Priceings = () => {
+ const Priceingse = [
     {
       id: 1,
       membership_type: "Basic",
@@ -71,12 +72,20 @@ const Price = () => {
 
   return( 
   <div>
-<h1>dsflds;sad</h1>
+    <h1 className="text-black text-4xl font-bold text-center my-6">All Priceing Pakages</h1>
+    <div className="grid md:grid-cols-2  mx-2 my-2 justify-center items-center">
 
+    
+    {
+       Priceingse.map((prices)=><Priceing  key={prices.id} prices={prices} ></Priceing>) 
+    }
+</div>
   </div>
   )
 };
 
-Price.propTypes = {};
+Priceings.propTypes = {
+  // price:PropTypes.object
+};
 
-export default Price;
+export default Priceings;
