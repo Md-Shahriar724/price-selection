@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 const Nav = ({route}) => {
     return (
         <>
-            <ul className=' mr-7'>
+            <li className=' mr-7 hover:text-red-600 '>
                 <a href={route.path}> {route.label} </a>
-            </ul>
+            </li>
         </>
     );
 };

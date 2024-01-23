@@ -13,18 +13,18 @@ const Navitems = () => {
       ];
       
     return (
-        <>
-        <div className="md:hidden text-2xl" onClick={()=>{setOpen(!open)}}>
+        <nav  className="bg-green-200">
+        <div className="md:hidden text-2xl py-4 px-3" onClick={()=>{setOpen(!open)}}>
             {
                 open === true  ? <AiOutlineClose className="" /> : <AiOutlineMenu></AiOutlineMenu>
             }
         </div>
-        <nav className="md:flex justify-center items-center">
+        <ul className={`md:flex justify-center items-center absolute md:static bg-green-200 px-6 py-4 ${open ? "top-12" : "-top-40"} duration-1000 rounded-lg `}>
             {
                 routes.map((route) =><Nav key={route.id} route={route} ></Nav>)
             }
+        </ul>
         </nav>
-        </>
     );
 };
 
